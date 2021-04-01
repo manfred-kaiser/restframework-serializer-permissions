@@ -1,0 +1,1 @@
+# restframework-serializer-permissions
