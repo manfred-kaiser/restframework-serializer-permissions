@@ -11,7 +11,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='restframework-serializer-permissions',
-    version='0.0.1',
+    version='0.0.2',
     author='Manfred Kaiser',
     author_email='manfred.kaiser@ssh-mitm.at',
     description='permission based serializing for django restframework',

@@ -46,7 +46,6 @@ class SerializerPermissionMixin(PermissionMixin):
 
         return ret
 
-
     @classmethod
     def many_init(cls, *args, **kwargs):
         """
@@ -81,8 +80,10 @@ class SerializerPermissionMixin(PermissionMixin):
 class BaseSerializer(SerializerPermissionMixin, serializers.BaseSerializer):
     pass
 
+
 class Serializer(SerializerPermissionMixin, serializers.Serializer):
     pass
+
 
 class ListSerializer(SerializerPermissionMixin, serializers.ListSerializer):
     pass
@@ -90,6 +91,7 @@ class ListSerializer(SerializerPermissionMixin, serializers.ListSerializer):
 
 class ModelSerializer(SerializerPermissionMixin, serializers.ModelSerializer):
     pass
+
 
 class HyperlinkedModelSerializer(SerializerPermissionMixin, serializers.HyperlinkedModelSerializer):
     pass
