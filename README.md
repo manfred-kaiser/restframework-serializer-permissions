@@ -29,7 +29,7 @@ from myproject.models import ShoppingItem, ShoppingList
 
 class ShoppingItemSerializer(serializers.ModelSerializer):
 
-    item_name = serializers.CharField(read_only=True)
+    item_name = serializers.CharField()
 
     class Meta:
         # metaclass as described in drf docs
