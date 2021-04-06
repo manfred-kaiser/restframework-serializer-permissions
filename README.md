@@ -1,7 +1,7 @@
 restframework-serializer-permissions
 ====================================
 
-Drop in replacement for Django Restframework Serializers to add permission based field serialization.
+Drop in replacement for [Django Restframework Serializers](https://www.django-rest-framework.org/api-guide/serializers/) to add permission based field serialization.
 
 Installation
 ------------
