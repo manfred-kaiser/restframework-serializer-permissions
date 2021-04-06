@@ -14,13 +14,23 @@ setup(
     version='0.0.1',
     author='Manfred Kaiser',
     author_email='manfred.kaiser@ssh-mitm.at',
-    description='permissions for django restframework serializers and fields',
+    description='permission based serializing for django restframework',
     long_description=long_description,
     long_description_content_type='text/markdown',
     packages=find_packages(),
     url="https://github.com/manfred-kaiser/restframework-serializer-permissions",
+    install_requires=[
+        'django>=2.1',
+        'djangorestframework>=3.12',
+    ],
     classifiers=[
         "Programming Language :: Python :: 3",
+        'Environment :: Web Environment',
+        'Framework :: Django',
+        'Intended Audience :: Developers',
+        'Operating System :: OS Independent',
+        'Topic :: Internet :: WWW/HTTP',
+        'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)"
     ]
 )
