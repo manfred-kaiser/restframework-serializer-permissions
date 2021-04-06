@@ -4,10 +4,6 @@ from serializer_permissions.mixins import SerializerFieldPermissionMixin
 MANY_RELATION_KWARGS = relations.MANY_RELATION_KWARGS + ('hide', 'permissions', 'permission_classes')
 
 
-class ManyRelatedField(SerializerFieldPermissionMixin, relations.ManyRelatedField):
-    pass
-
-
 class RelatedField(SerializerFieldPermissionMixin, relations.HyperlinkedIdentityField):
 
     @classmethod
@@ -34,20 +30,22 @@ class RelatedField(SerializerFieldPermissionMixin, relations.HyperlinkedIdentity
 class HyperlinkedIdentityField(SerializerFieldPermissionMixin, relations.HyperlinkedIdentityField):
     pass
 
+
 class HyperlinkedRelatedField(SerializerFieldPermissionMixin, relations.HyperlinkedRelatedField):
     pass
+
 
 class ManyRelatedField(SerializerFieldPermissionMixin, relations.ManyRelatedField):
     pass
 
+
 class PrimaryKeyRelatedField(SerializerFieldPermissionMixin, relations.PrimaryKeyRelatedField):
     pass
 
-class RelatedField(SerializerFieldPermissionMixin, relations.RelatedField):
-    pass
 
 class SlugRelatedField(SerializerFieldPermissionMixin, relations.SlugRelatedField):
     pass
+
 
 class StringRelatedField(SerializerFieldPermissionMixin, relations.StringRelatedField):
     pass
